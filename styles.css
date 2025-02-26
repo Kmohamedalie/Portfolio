@@ -1198,3 +1198,72 @@ nav {
     font-size: 0.85rem;
   }
 }
+
+/* Enhanced Dropdown Styles */
+.dropdown-submenu {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: var(--bg-primary);
+    min-width: 200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--bg-tertiary);
+}
+
+.dropdown-submenu:hover > .submenu {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+.submenu-toggle {
+    position: relative;
+    padding-right: 2em !important;
+}
+
+.submenu-toggle::after {
+    content: '▶';
+    font-size: 0.7em;
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Mobile Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .submenu {
+        position: static;
+        box-shadow: none;
+        border: none;
+        background: var(--bg-secondary);
+        padding-left: 1.5rem;
+    }
+
+    .submenu-toggle::after {
+        content: '▼';
+    }
+
+    .dropdown-submenu.active > .submenu {
+        display: block;
+    }
+}
+
+/* Add to your existing script.js */
+document.addEventListener('DOMContentLoaded', function() {
+    const submenus = document.querySelectorAll('.submenu-toggle');
+    
+    submenus.forEach((submenu) => {
+        submenu.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (window.innerWidth <= 768) {
+                submenu.parentElement.classList.toggle('active');
+            }
+        });
+    });
+});

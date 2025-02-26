@@ -99,6 +99,20 @@ The website is fully responsive with breakpoints for:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+MIT License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This website is open source and available under the MIT License, which means:
+
+- ✅ Commercial use
+- ✅ Modification
+- ✅ Distribution
+- ✅ Private use
+- ✅ Liability and warranty limitations
+
+For more details, see the [LICENSE](LICENSE) file in this repository.
+
 ## 🙏 Acknowledgments
 
 - Portfolio website developed with assistance from [Claude AI](https://www.anthropic.com/claude)
