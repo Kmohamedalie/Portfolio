@@ -28,7 +28,7 @@ Visit the website: [Mohamed Alie Kamara Portfolio](https://kmohamedalie.github.i
 - Google Fonts
 
 ## 📂 Project Structure
-
+<code>
 Portfolio/
 ├── index.html # Main HTML file
 ├── styles.css # CSS styles
@@ -36,6 +36,7 @@ Portfolio/
 ├── images/ # Project images
 ├── data/ # Data files
 └── scripts/ # JavaScript files
+</code>
 
 ## 🎯 Featured Projects
 
