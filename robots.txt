@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Sitemap: https://your-portfolio-url.com/sitemap.xml
+
+# Prevent crawling of specific files/directories if needed
+Disallow: /private/
+Disallow: /*.pdf$ 
