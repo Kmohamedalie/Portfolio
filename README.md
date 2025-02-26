@@ -28,3 +28,83 @@ Visit the website: [Mohamed Alie Kamara Portfolio](https://kmohamedalie.github.i
 - Google Fonts
 
 ## 📂 Project Structure
+
+Portfolio/
+├── index.html # Main HTML file
+├── styles.css # CSS styles
+├── README.md # Project documentation
+├── images/ # Project images
+├── data/ # Data files
+└── scripts/ # JavaScript files
+
+## 🎯 Featured Projects
+
+### Data Science & Machine Learning
+
+- SpaceX Falcon 9 Landing Prediction
+- Faces in the Wild (Facial Recognition)
+- YOLO Object Detection
+
+### Business Intelligence
+
+- AdventureWorks Bike Shop Dashboard
+- Euro Debt Crisis Analysis
+- UK Bank Customer Segmentation
+
+## 🔧 Development
+
+To run this project locally:
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Kmohamedalie/Portfolio.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd Portfolio
+```
+
+3. Open `index.html` in your browser or use a local server:
+
+```bash
+# Using Python
+python -m http.server 8000
+```
+
+## 📱 Responsive Design
+
+The website is fully responsive with breakpoints for:
+
+- Mobile devices (< 768px)
+- Tablets (768px - 1024px)
+- Desktop (> 1024px)
+
+## 🌈 Accessibility Features
+
+- ARIA labels for better screen reader support
+- Color contrast ratios meeting WCAG standards
+- Keyboard navigation support
+- Color-blind friendly design
+- Reduced motion preferences support
+
+## 🔗 Connect with Me
+
+- [LinkedIn](https://www.linkedin.com/in/mohamed-alie-kamara-8765941a4/)
+- [GitHub](https://github.com/Kmohamedalie)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Portfolio website developed with assistance from [Claude AI](https://www.anthropic.com/claude)
+- Icons provided by [Font Awesome](https://fontawesome.com/)
+- Fonts from [Google Fonts](https://fonts.google.com/)
+
+---
+
+© 2024 Mohamed Alie Kamara. All rights reserved.
