@@ -1134,5 +1134,36 @@
         });
       });
     </script>
+    <script>
+const chatbox = document.createElement("div");
+chatbox.innerHTML = `<div id="chat-container">
+    <div id="chat-log"></div>
+    <input type="text" id="user-input" placeholder="Type a message...">
+    <button onclick="sendMessage()">Send</button>
+</div>`;
+document.body.appendChild(chatbox);
+
+async function sendMessage() {
+    let userMessage = document.getElementById("user-input").value;
+    let chatLog = document.getElementById("chat-log");
+    chatLog.innerHTML += `<p><strong>You:</strong> ${userMessage}</p>`;
+
+    let response = await fetch("https://api.openai.com/v1/chat/completions", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer YOUR_OPENAI_API_KEY"
+        },
+        body: JSON.stringify({
+            model: "gpt-3.5-turbo",
+            messages: [{ role: "user", content: userMessage }]
+        })
+    });
+
+    let data = await response.json();
+    chatLog.innerHTML += `<p><strong>Bot:</strong> ${data.choices[0].message.content}</p>`;
+}
+</script>
+
   </body>
 </html>
