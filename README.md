@@ -108,7 +108,7 @@ This website is open source and available under the MIT License, which means:
 - ✅ Private use
 - ✅ Liability and warranty limitations
 
-For more details, see the [LICENSE](LICENSE) file in this repository.
+For more details, see the [LICENSE](https://opensource.org/license/MIT) file in this repository.
 
 ## 🙏 Acknowledgments
 
