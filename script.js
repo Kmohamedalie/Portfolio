@@ -101,4 +101,49 @@ document.addEventListener("DOMContentLoaded", function () {
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear();
   }
+
+  // Scroll animations with Intersection Observer
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fade-in-up');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Observe all project cards and stat cards
+  document.querySelectorAll('.project-card, .stat-card, .about-section').forEach(el => {
+    observer.observe(el);
+  });
+
+  // Smooth navbar background on scroll
+  let lastScroll = 0;
+  const navbar = document.querySelector('nav');
+  
+  window.addEventListener('scroll', function() {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll > 100) {
+      navbar.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.12)';
+    } else {
+      navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.08)';
+    }
+    
+    lastScroll = currentScroll;
+  });
+
+  // Add loading animation
+  window.addEventListener('load', function() {
+    document.body.style.opacity = '0';
+    setTimeout(() => {
+      document.body.style.transition = 'opacity 0.5s ease-in';
+      document.body.style.opacity = '1';
+    }, 100);
+  });
 });

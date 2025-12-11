@@ -137,20 +137,57 @@
     </nav>
 
     <main role="main">
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          A passionate data professional with expertise in transforming complex
-          data into actionable insights. Experienced in business intelligence,
-          data science, and machine learning solutions.
-        </p>
+      <section id="about" class="about-section">
+        <div class="section-header">
+          <h2 class="section-title">
+            <span class="title-accent">About</span> Me
+          </h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="about-lead">
+              A passionate data professional with expertise in transforming complex
+              data into actionable insights. Experienced in business intelligence,
+              data science, and machine learning solutions.
+            </p>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <h3>Business Intelligence</h3>
+              <p>Power BI • Tableau • DAX</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <h3>Machine Learning</h3>
+              <p>Python • TensorFlow • Scikit-learn</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <h3>Data Science</h3>
+              <p>Analytics • Visualization • AI</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="projects" aria-labelledby="projects-title">
-        <h2 id="projects-title">Featured Projects</h2>
+        <div class="section-header">
+          <h2 id="projects-title" class="section-title">
+            Featured <span class="title-accent">Projects</span>
+          </h2>
+          <div class="title-underline"></div>
+        </div>
 
         <h3 id="bi-projects-title" class="category-title">
-          Business Intelligence & Analytics Projects
+          <i class="fas fa-chart-bar"></i> Business Intelligence & Analytics Projects
         </h3>
         <div class="project-grid" role="list">
           <div class="project-card" role="listitem">
@@ -224,7 +261,9 @@
           </div>
         </div>
 
-        <h3 class="category-title">Data Science & Machine Learning Projects</h3>
+        <h3 class="category-title">
+          <i class="fas fa-flask"></i> Data Science & Machine Learning Projects
+        </h3>
         <div class="project-grid">
           <div class="project-card">
             <img
