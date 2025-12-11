@@ -172,10 +172,14 @@ header::before {
   font-size: 4rem;
   font-weight: 900;
   margin-bottom: 1rem;
-  color: #ffffff;
+  color: #000000;
   line-height: 1.1;
-  text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
   letter-spacing: 1px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.5rem 1.5rem;
+  border-radius: 12px;
+  display: inline-block;
 }
 
 .subheading {
@@ -231,17 +235,23 @@ header::before {
 }
 
 .secondary-btn {
-  background: rgba(255, 255, 255, 0.15);
-  color: white;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--primary-color);
   backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  border: 2px solid white;
 }
 
 .secondary-btn:hover {
-  background: rgba(255, 255, 255, 0.25);
-  border-color: rgba(255, 255, 255, 0.5);
+  background: white;
+  border-color: white;
   transform: translateY(-2px);
   box-shadow: var(--shadow-xl);
+  color: var(--primary-dark);
+}
+
+.secondary-btn i {
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 /* ============================================
