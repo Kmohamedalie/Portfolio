@@ -513,6 +513,8 @@ section {
   height: 220px;
   object-fit: cover;
   transition: transform 0.4s ease;
+  background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+  display: block;
 }
 
 .project-card:hover .project-image {
